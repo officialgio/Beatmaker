@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <div class="sequencer">
+    <div class="sequencer flex">
         <!-- Kick -->
-        <div class="kick-track">
-            <div class="controls">
+        <div class="kick-track flex">
+            <div class="controls flex flex-1">
                 <h1>Kick</h1>
                 <button data-track="0" class="mute kick-volume">
                     <i class="fa-solid fa-volume-xmark"></i>
@@ -27,7 +27,7 @@
                     <option value="./sounds/kick-heavy.wav">Kick Heavy</option>
                 </select>
             </div>
-            <div class="kick">
+            <div class="kick flex flex-1">
                 <div class="pad kick-pad b0"></div>
                 <div class="pad kick-pad b1"></div>
                 <div class="pad kick-pad b2"></div>
@@ -40,8 +40,8 @@
         </div>
 
         <!-- Snare -->
-        <div class="snare-track">
-            <div class="controls">
+        <div class="snare-track flex">
+            <div class="controls flex flex-1">
                 <h1>Snare</h1>
                 <button data-track="1" class="mute snare-volume">
                     <i class="fa-solid fa-volume-xmark"></i>
@@ -52,7 +52,7 @@
                     <option value="./sounds/snare-vinyl02.wav">Snare Vinyl</option>
                 </select>
             </div>
-            <div class="snare">
+            <div class="snare flex">
                 <div class="pad snare-pad b0"></div>
                 <div class="pad snare-pad b1"></div>
                 <div class="pad snare-pad b2"></div>
@@ -65,8 +65,8 @@
         </div>
 
         <!-- HiHat -->
-        <div class="hihat-track">
-            <div class="controls">
+        <div class="hihat-track flex">
+            <div class="controls flex flex-1">
                 <h1>Hihat</h1>
                 <button data-track="2" class="mute hihat-volume">
                     <i class="fa-solid fa-volume-xmark"></i>
@@ -76,7 +76,7 @@
                     <option value="./sounds/hihat-808.wav">808 Hihat</option>
                 </select>
             </div>
-            <div class="hihat">
+            <div class="hihat flex">
                 <div class="pad hihat-pad b0"></div>
                 <div class="pad hihat-pad b1"></div>
                 <div class="pad hihat-pad b2"></div>
@@ -87,11 +87,16 @@
                 <div class="pad hihat-pad b7"></div>
             </div>
         </div>
+
+        <button class="play">Play</button>
+        <div class="tempo">
+            <input type="range" class="tempo-slider" max="300" min="20" value="150">
+            <p>Tempo: <span class="tempo-nr">150</span></p>
+        </div>
     </div>
-    <button class="play">Play</button>
-    <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
-    <audio class="kick-sound" src="./sounds/snare-acoustic01.wav"></audio>
-    <audio class="hihat-sound" src="./sounds/hihat-acoustic01.wav"></audio>
+    <audio class="kick-sound" src="./sounds/kick-classic.mp4"></audio>
+    <audio class="snare-sound" src="./sounds/snare-acoustic01.mp4"></audio>
+    <audio class="hihat-sound" src="./sounds/hihat-acoustic01.mp4"></audio>
 
 
 
